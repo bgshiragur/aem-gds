@@ -12,8 +12,17 @@
   background-color: var(--background-color);
 }
 
+.cards.swaper li {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .cards .cards-card-body {
   margin: 16px;
+}
+
+.cards-container .cards.swaper .cards-card-body {
+  color: red;
 }
 
 .cards .cards-card-image {
@@ -25,3 +34,12 @@
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+
+.cards > ul li:nth-child(7) {
+  color: red;
+}
+
+html[dir='rtl'] .cards > ul > li {
+  color: green;
+}
+
